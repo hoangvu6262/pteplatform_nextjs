@@ -1,0 +1,44 @@
+type Category @model {
+  id: ID! @unique
+  name: String
+  shortname: String
+  description: String!
+  parentID: ID!
+}
+
+type QuestionType @model @search {
+  id: ID! @unique
+  name: String
+  description: String!
+}
+
+type Answer @model @search {
+  id: ID! @unique
+  answer: String
+  explaination: String
+}
+
+type Question @model @search {
+  id: ID! @unique
+  question: String
+  questionType(id: ID): QuestionType
+  explaination: String
+  answers: [Answer]
+}
+
+type Lesson @model {
+  id: ID! @unique
+  content: String!
+  image: String
+  internalNote: String
+  description: String
+  questions: [Question]
+
+  # Extend models with resolvers
+  # https://grafbase.com/docs/edge-gateway/resolvers
+  # gravatar: URL @resolver(name: "user/gravatar")
+}
+
+# Start your backend
+# https://grafbase.com/docs/cli
+# npx grafbase dev
