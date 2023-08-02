@@ -1,0 +1,48 @@
+@use "../../../assets/styles/" as *;
+
+.cus-input {
+  width: 100%;
+
+  p {
+    padding-bottom: 5px;
+        font-size: 12px;
+  }
+  .MuiFormControl-root {     
+    .MuiInputBase-root { 
+        background-color: #FFFFFF; 
+        .MuiInputBase-input {
+            font-size: 13px;
+            font-family: $f-family-0;
+            &:focus {
+              outline-color: $primary-color;
+            }
+        } 
+            
+    }
+
+    .Mui-foucsed {
+      .MuiOutlinedInput-notchedOutline{
+        border-color: $primary-color !important;
+      } 
+    }
+  }
+
+  &--err {
+    color: $error-color;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.error {
+  .MuiFormControl-root { 
+    .MuiFormLabel-root {
+      color: $error-color
+    }
+    .MuiOutlinedInput-root {
+      .MuiOutlinedInput-notchedOutline{
+        border-color: $error-color !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@mixin button ($bg-color, $color, $border-color, $bg-hover, $hover-color) {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 16px;
+    background-color: $bg-color;
+    color: $color;
+    border-radius: 100px;
+    border: 3px solid $border-color;
+    cursor: pointer;
+    // text-transform: capitalize;
+
+    &:hover {
+        background-color: $bg-hover;
+        color: $hover-color; 
+        border: 3px solid $bg-hover;
+    }
+}

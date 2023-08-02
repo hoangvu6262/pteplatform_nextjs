@@ -1,0 +1,57 @@
+@use '../../../../assets/styles/' as *;
+
+.word-highlight {
+  display: inline-block;
+  width: fit-content;
+  margin: 2px 0;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-color;
+
+    color: #ffffff;
+  }
+
+  &.checked {
+    background-color: $primary-color;
+    color: #ffffff ;
+  }
+
+  
+
+  &.default {
+    background-color: #fafafa;
+    padding: 8px 16px 6px;
+    border: 1px solid #838383;
+    border-radius: 6px;
+    color: #838383;
+    
+  }
+
+  word {
+    display: inline-block;
+    width: fit-content;
+    padding: 0;
+    margin: 2px 0;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: $primary-color-1;
+  
+    }
+  
+    &.disable {
+  
+      &:hover {
+        background-color: transparent;
+        cursor: context-menu;
+      }
+    }
+  }
+  
+  span {
+    font-size: 14px;
+    font-family: $f-family-0;
+  }
+
+}

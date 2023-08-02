@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+// color
+$primary-color: #007fa3;  // default
+$primary-color-1: #0080a317;  // default
+$secondary-color: #f9d923;
+$error-color: #df1f1f;
+$error-color-1: #df1f1f21;
+$success-color: #00da6f;
+$success-color-1: #00da711c;
+
+// box shadow
+$admin-box-shadow: rgb(58 53 65 / 42%) 0px 4px 8px -4px;
+$paper-box-shadow:rgb(58 53 65 / 10%) 0px 2px 10px 0px;
+
+//border Color
+$error-border-color: #df1f1f;
+$primary-border-color: #007fa3;  // default
+$secondary-border-color: #f9d923;
+$success-border-color: #00da6f;
+
+// background color
+$white-background-color: #ffffff;
+$grey-background-color: #f6f6f6;
+$blue-background-color: #f5fbfd;
+
+//text color
+$text-color: #000000;
+$secondary-text-color: #28291e;
+$tertirary-text-color: #838383;
+
+
+// font family
+$f-family-0: 'Open Sans', sans-serif;
+
+
+// break point
+$large: 900px;
+$extra-large: 1200px;

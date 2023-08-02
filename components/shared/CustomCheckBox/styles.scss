@@ -1,0 +1,19 @@
+@use "../../../assets/styles/" as *;
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .MuiButtonBase-root{
+        padding-right: 0px !important;
+    }
+    .Mui-checked {
+        color: $primary-color !important;
+      }
+
+    p{
+        margin-left: 0px;
+        font-size: 13px;
+        font-family: $f-family-0;
+    }
+}

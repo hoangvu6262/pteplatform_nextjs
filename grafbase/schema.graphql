@@ -1,15 +1,15 @@
 type Category @model {
   id: ID! @unique
-  name: String
-  shortname: String
-  description: String!
-  parentID: ID!
+  name: String!
+  shortname: String!
+  description: String
+  parentID: ID
 }
 
 type QuestionType @model @search {
   id: ID! @unique
-  name: String
-  description: String!
+  name: String!
+  description: String
 }
 
 type Answer @model @search {
@@ -20,8 +20,8 @@ type Answer @model @search {
 
 type Question @model @search {
   id: ID! @unique
-  question: String
-  questionType(id: ID): QuestionType
+  question: String!
+  questionType(id: ID): QuestionType!
   explaination: String
   answers: [Answer]
 }
@@ -29,10 +29,11 @@ type Question @model @search {
 type Lesson @model {
   id: ID! @unique
   content: String!
+  category: Category!
   image: String
   internalNote: String
   description: String
-  questions: [Question]
+  questions: [Question]!
 
   # Extend models with resolvers
   # https://grafbase.com/docs/edge-gateway/resolvers
