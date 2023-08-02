@@ -1,5 +1,5 @@
 "use client";
-import { useState, useContext } from "react";
+import { useState, useContext, memo } from "react";
 import {
   Grid,
   CircularProgress,
@@ -13,9 +13,26 @@ import { useFormContext } from "react-hook-form";
 
 import CustomInput from "@/components/shared/CustomInput/CustomInput";
 import FIBContent from "@/components/management/question/FIBContent/FIBContent";
+import { MyLessonContext } from "@/config/context/lesson/LessonContext";
 
 const LessonForm = () => {
+  const { isEmbedded } = useContext(MyLessonContext);
   const [expand, setExpand] = useState(false);
+
+  console.log(isEmbedded);
+
+  const renderFIBParagraph = (): JSX.Element | null => {
+    if (!isEmbedded) return null;
+    return (
+      <section className="lesson__main--section">
+        <FIBContent
+          fibContent='ccc "css-modules",'
+          // setFibContent={setFibContent}
+          handleFibContent={() => {}}
+        />
+      </section>
+    );
+  };
 
   return (
     <div className="lesson-form">
@@ -112,14 +129,7 @@ const LessonForm = () => {
                 )}
                 <CheckboxGroup /> */}
               </section>
-
-              <section className="lesson__main--section">
-                <FIBContent
-                  fibContent='ccc "css-modules",'
-                  // setFibContent={setFibContent}
-                  handleFibContent={() => {}}
-                />
-              </section>
+              {renderFIBParagraph()}
             </div>
           </div>
           <div>
@@ -181,4 +191,4 @@ const LessonForm = () => {
   );
 };
 
-export default LessonForm;
+export default memo(LessonForm);
