@@ -15,14 +15,14 @@ type QuestionType @model @search {
 type Answer @model @search {
   id: ID! @unique
   answer: String
-  explaination: String
+  explanation: String
 }
 
 type Question @model @search {
   id: ID! @unique
-  question: String!
+  question: String
   questionType(id: ID): QuestionType!
-  explaination: String
+  explanation: String
   answers: [Answer]
 }
 
