@@ -1,3 +1,4 @@
+import "./styles.scss";
 import WordHighLight from "@/components/management/lesson/WordHighLight/WordHighLight";
 import { slipWordhelper } from "@/helpers/paragraphHelper";
 
@@ -18,7 +19,7 @@ const ParagraphHighLight = ({ content }: Props) => {
         if (word) {
           const wordSplitted = slipWordhelper(word);
           return (
-            <span key={index}>
+            <span key={index} className="para-word-hl">
               {wordSplitted[0]}
               {wordSplitted[1] && (
                 <WordHighLight
@@ -33,18 +34,15 @@ const ParagraphHighLight = ({ content }: Props) => {
           );
         }
       })
-      .reduce<string | JSX.Element | undefined>(
-        (prev, curr) => [prev, " ", curr],
-        ""
-      );
+      .reduce((prev, curr) => [prev, " ", curr]);
   };
 
   return (
     <>
       <div className="custom-para-hl">
-        {content.split("\n").map((sentence, index) => (
-          <p key={index}>{renderParagraph(sentence, index)}</p>
-        ))}
+        {content.split("\n").map((sentence, index) => {
+          return <p key={index}>{renderParagraph(sentence, index)}</p>;
+        })}
       </div>
     </>
   );

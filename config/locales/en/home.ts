@@ -1,0 +1,16 @@
+export const HOME_EN = {
+    subscriptionTitle: "Number of subscriptions by month",
+    practiceTitle: "Number of practice by month",
+    lessonTitle: "Number of lessons",
+    activeTitle: "Number of active and inactive lessons",
+    june: "June",
+    july: "July",
+    august: "August",
+    september: "September",
+    october: "October",
+    subscriptions: "Subscriptions",
+    registered: "Registered",
+    practiced: "Practiced",
+    active: "Active",
+    inactive: "Inactive",
+}

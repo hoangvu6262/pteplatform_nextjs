@@ -1,0 +1,88 @@
+@use '../../../../../assets/styles/' as *;
+
+.option {
+    padding: 5px 10px;
+    border-bottom: 1px solid transparent;
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+
+        &-title {
+            // margin-right: 25px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height : 100%;
+            p {
+                font-size: 16px;
+                font-family: $f-family-0;
+            }
+    
+            span {
+                padding: 10px 20px;
+                background-color: $primary-color-1;
+                border-radius: 10px;
+            }
+    
+        }
+    }
+
+    
+
+    &__main {
+        padding: 0px 13px;
+        padding-top: 16px;
+        // .MuiTextField-root{
+        //     width: 100%;
+        //     input {
+        //         padding: 10px 15px;
+        //     }
+        //     .MuiOutlinedInput-notchedOutline {
+        //         border: 1px solid rgb(194, 196, 209);
+
+        //     }
+        //     &:hover {
+        //         .MuiOutlinedInput-notchedOutline {
+        //             border: 1px solid $primary-color;
+    
+        //         }
+        //     }
+
+        //     &.Mui-foucsed{
+        //         .MuiOutlinedInput-notchedOutline {
+        //             border: 1px solid $primary-color;
+    
+        //         }
+        //     }
+
+
+        // } 
+    }
+
+    &__btn--delete {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        padding-top: 15px
+    }
+
+    &__add-option {
+        button {
+
+            @include button($primary-color, #ffffff, $primary-color, #025f79, #ffffff);
+        }
+    }
+
+    &__empty {
+        margin: 15px 0px;
+        padding: 15px 10px;
+        border-radius: 5px;
+        background-color: $primary-color-1;
+        color: $primary-color;
+        font-size: 17px;
+    }
+}

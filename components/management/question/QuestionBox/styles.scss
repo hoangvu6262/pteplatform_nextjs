@@ -1,0 +1,80 @@
+@use '../../../../assets/styles/' as *;
+
+.embeded-box {
+    padding: 0px 20px 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: none !important;
+    background-color: #ffffff;
+    box-shadow: $paper-box-shadow ;
+    border-Left: 3px solid $primary-color !important;
+
+
+    &__header{      
+        // margin-bottom: 10px;
+        h2 {
+            font-size: 15px;
+            font-family: $f-family-0;
+            font-weight: 500;
+            height: max-content;
+            color: $text-color;
+        }
+
+        p {
+            font-size: 14px;
+            font-family: $f-family-0;
+            color: $secondary-text-color;
+        }
+
+        &--title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            height: max-content;
+        }
+    }
+
+    &__explanation {
+        margin-top: 7px;
+    }
+
+    &__main{
+        margin-top: 20px;
+
+        h5 {
+            margin: 15px 0px;
+            margin-bottom: 0px;
+            font-size: 15px;
+            font-family: $f-family-0;
+            font-weight: 500
+        }
+
+        p {
+            font-size: 15px;
+            font-family: $f-family-0;
+            font-weight: 500
+        }
+    }
+
+    .disable {
+        display: none;
+    }
+
+    &__footer {
+        text-align: right;  
+        // padding-top: 10px;
+    }
+
+    .MuiFormControl-root {
+        .MuiInputBase-root {
+            .MuiInputBase-input {
+                padding:7px;
+                background-color: #fff;
+                font-size: 13px;
+                font-family: $f-family-0;
+            }
+        }
+    }
+}

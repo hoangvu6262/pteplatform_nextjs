@@ -1,0 +1,20 @@
+export const PROFILE_VI = {
+    title: "Hồ sơ Admin",
+    subTitle: "Admin / Hồ sơ",
+    allowImgFormat: "Cho phép *.jpeg, *.jpg, *.png",
+    allowImgSize: "kích cỡ tối đa 3.1 MB",
+    username: "Tên đăng nhập",
+    firstName: "Tên",
+    nickName: "Biệt danh",
+    lastName: "Họ",
+    phoneNumber1: "Số điện thoại 1",
+    phoneNumber2: "Số điện thoại 2",
+    phoneNumber3: "Số điện thoại 3",
+    saveChange: "Lưu thay đổi",
+    signIn: "Đăng nhập",
+    password: "Mật khẩu",
+    updateSuccessMsg: "Cập nhật thông tin thành công!!!",
+    loginSuccessMsg: "Đăng nhập thành công",
+    loginError: "Tên đăng nhập hoặc mật khẩu không chính xác",
+    loginPermissionDeny: "Yêu cầu bị từ chối!"
+}

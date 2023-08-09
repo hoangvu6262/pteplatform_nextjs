@@ -1,0 +1,39 @@
+
+@use '../../../assets/styles/' as *;
+
+.custom-select{
+    p{
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+    .MuiBox-root {
+    
+        .MuiFormControl-root {
+            padding-bottom: 0px !important;
+            height: max-content !important;
+            .MuiInputBase-root {
+                border-radius: 10px !important;
+                .MuiSelect-select {
+                    padding: 5px 30px 5px 10px !important;
+                }
+    
+                .MuiInputBase-input{
+                    font-size: 13px;
+                    font-family: $f-family-0;
+                }
+            }
+        }
+    }
+    
+}
+.MuiPaper-root {  
+    // margin-left: 10px !important;
+    .MuiList-root {
+        li {
+            font-size: 13px;
+            font-family: $f-family-0;
+        }
+    }
+}
+
+

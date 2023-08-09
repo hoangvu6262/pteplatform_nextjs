@@ -24,13 +24,7 @@ const WordHighLight = ({ isSelected, text, index, paraIndex }: Props) => {
         })}
         onClick={handleClick}
       >
-        <span
-          className={classNames("word small", {
-            disable: text[0]?.match(/^[0-9]/),
-          })}
-        >
-          {text}
-        </span>
+        {text}
       </span>
     </>
   );

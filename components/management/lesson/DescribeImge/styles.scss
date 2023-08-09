@@ -1,0 +1,49 @@
+@use "../../../../assets/styles/" as *;
+
+.describe-img {
+    h2 {
+        font-size: 17px;
+        color: $primary-color;
+        font-family: $f-family-0;
+        font-weight: 500;
+    }
+
+    &__preview {
+        margin: 15px 0px;
+        height: 300px;
+        background-color: #e6e7ed;
+        border-radius: 10px;
+        border: 2px dashed rgb(194, 196, 209);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 500px;
+            max-height: 250px;
+        }
+    }
+
+    &__btn-add{
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+        
+    }
+
+    label {
+        display: flex !important;
+        align-items: center;
+        gap: 5px;  
+        font-size: 13px;
+        font-family: $f-family-0;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    
+}

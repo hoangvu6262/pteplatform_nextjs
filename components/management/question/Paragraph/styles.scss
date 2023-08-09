@@ -1,0 +1,22 @@
+@use '../../../../assets/styles/' as *;
+
+.paragraph {
+    p {
+        margin: 15px 0px;
+        font-size: 12px;
+        font-family: $f-family-0;
+        color: rgb(179, 176, 176)
+    }
+
+    .MuiFormControl-root {
+        .MuiInputBase-root {
+            padding: 0px;
+            .MuiInputBase-input {
+                padding:7px;
+                background-color: #fff;
+                font-size: 13px;
+                font-family: $f-family-0;
+            }
+        }
+    }
+}

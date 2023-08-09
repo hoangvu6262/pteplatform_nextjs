@@ -13,13 +13,14 @@ import { useFormContext } from "react-hook-form";
 
 import CustomInput from "@/components/shared/CustomInput/CustomInput";
 import FIBContent from "@/components/management/question/FIBContent/FIBContent";
+import CheckboxGroup from "@/components/management/lesson/CheckBoxGroup/CheckBoxGroup";
+import DescribeImage from "@/components/management/lesson/DescribeImge/DescribeImage";
+import QuestionList from "@/components/management/question/QuestionList";
 import { MyLessonContext } from "@/config/context/lesson/LessonContext";
 
 const LessonForm = () => {
   const { isEmbedded } = useContext(MyLessonContext);
   const [expand, setExpand] = useState(false);
-
-  console.log(isEmbedded);
 
   const renderFIBParagraph = (): JSX.Element | null => {
     if (!isEmbedded) return null;
@@ -102,7 +103,7 @@ const LessonForm = () => {
                     </Tooltip>
 
                     <div>
-                      {/* <DescribeImg name="Desimage" updateData={updateData} /> */}
+                      <DescribeImage name="Desimage" />
                       <p className="lesson__head--input-err">file is too big</p>
                     </div>
                   </div>
@@ -126,18 +127,18 @@ const LessonForm = () => {
                       isUpdate={isUpdate}
                     />
                   </>
-                )}
-                <CheckboxGroup /> */}
+                )}*/}
+                <CheckboxGroup />
               </section>
               {renderFIBParagraph()}
             </div>
           </div>
           <div>
-            {/* <QuestionList
-              fibContent={fibContent}
-              setFibContent={setFibContent}
-              questionDTO={questionDTO}
-            /> */}
+            <QuestionList
+            // fibContent={fibContent}
+            // setFibContent={setFibContent}
+            // questionDTO={questionDTO}
+            />
           </div>
         </Grid>
         <Grid item lg={3} xs={24}>

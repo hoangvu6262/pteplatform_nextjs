@@ -1,0 +1,20 @@
+export const PROFILE_EN = {
+    title: "Admin Profile",
+    subTitle: "Admin / Profile",
+    allowImgFormat: "Allowed *.jpeg, *.jpg, *.png",
+    allowImgSize: "max size of 3.1 MB",
+    username: "Username",
+    firstName: "First name",
+    nickName: "Nick name",
+    lastName: "Last name",
+    phoneNumber1: "Phone number 1",
+    phoneNumber2: "Phone number 2",
+    phoneNumber3: "Phone number 3",
+    saveChange: "Save changes",
+    signIn: "Sign In",
+    password: "Password",
+    updateSuccessMsg: "User update successfully!!!",
+    loginSuccessMsg: "Login success",
+    loginError: "Username or password incorrect",
+    loginPermissionDeny: "Permission denied!"
+}

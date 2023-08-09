@@ -1,0 +1,16 @@
+export const HOME_VI = {
+    subscriptionTitle: "Số lượt đăng ký trong tháng",
+    practiceTitle: "Số lượt luyện tập trong tháng",
+    lessonTitle: "Số lượng bài học",
+    activeTitle: "Số lượng bài học kích hoạt và bất hoạt",
+    june: "Tháng Sáu",
+    july: "Tháng Bảy",
+    august: "Tháng Tám",
+    september: "Tháng Chín",
+    october: "Tháng Mười",
+    subscriptions: "Lượt đăng ký",
+    registered: "Lượt tạo tài khoản",
+    practiced: "Lượt luyện tập",
+    active: "Kích hoạt",
+    inactive: "Bất hoạt",
+}
